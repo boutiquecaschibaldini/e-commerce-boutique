@@ -1,0 +1,26 @@
+{% if section.blocks.size > 0 %}<div class="b-container b-section"><h2>{{ section.settings.title | escape }}</h2>{% for block in section.blocks %}{% render block %}{% endfor %}</div>{% endif %}
+{% schema %}
+{
+  "name": "Baldini · Social e review",
+  "tag": "section",
+  "class": "baldini-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titolo",
+      "default": "Le esperienze dei nostri clienti"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Baldini · Social e review"
+    }
+  ]
+}
+{% endschema %}

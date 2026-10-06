@@ -1,0 +1,44 @@
+<div class="b-container b-section"><div class="b-support"><div><p class="b-eyebrow">{{ section.settings.eyebrow | escape }}</p><h2>{{ section.settings.title | escape }}</h2><p>{{ section.settings.text | escape }}</p></div>{% assign support_url = section.settings.link | default: settings.social_whatsapp %}{% if support_url != blank %}<a class="b-button b-button--dark" href="{{ support_url }}">{{ section.settings.button | escape }} {% render 'baldini-icon', name: 'help' %}</a>{% endif %}</div></div>
+{% schema %}
+{
+  "name": "Baldini · Specialista",
+  "tag": "section",
+  "class": "baldini-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Sopratitolo",
+      "default": "UNA PERSONA, NON UN ALGORITMO"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titolo",
+      "default": "Non sai quale casco scegliere?"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Testo",
+      "default": "Parla con un nostro specialista."
+    },
+    {
+      "type": "text",
+      "id": "button",
+      "label": "Pulsante",
+      "default": "Chiedi consiglio"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Destinazione"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Baldini · Specialista"
+    }
+  ]
+}
+{% endschema %}

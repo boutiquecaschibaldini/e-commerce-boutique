@@ -1,0 +1,131 @@
+<footer class="b-footer"><div class="b-container"><div class="b-footer__top">{% render 'baldini-logo' %}<p>{{ section.settings.tagline | escape }}</p></div><div class="b-footer__columns">
+{% for block in section.blocks %}<div {{ block.shopify_attributes }}>{% case block.type %}{% when 'links' %}<h2>{{ block.settings.menu_title | default: block.settings.menu.title | escape }}</h2><ul role="list">{% for link in block.settings.menu.links %}<li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>{% endfor %}</ul>{% when 'collections' %}<h2>{{ block.settings.title | escape }}</h2><ul>{% for collection in block.settings.collections %}<li><a href="{{ collection.url }}">{{ collection.title | escape }}</a></li>{% endfor %}</ul>{% when 'text' %}<h2>{{ block.settings.title | escape }}</h2><div class="prose">{{ block.settings.content }}</div>{% when 'newsletter' %}<h2>{{ block.settings.title | escape }}</h2><div class="prose">{{ block.settings.content }}</div>{% form 'customer', id: 'BNewsletter' %}<input type="hidden" name="contact[tags]" value="newsletter"><label class="sr-only" for="BNewsletterEmail">Email</label><div class="b-newsletter-input"><input id="BNewsletterEmail" type="email" name="contact[email]" placeholder="La tua email" autocomplete="email" required><button type="submit" aria-label="Iscriviti alla newsletter">{% render 'baldini-icon', name: 'arrow' %}</button></div>{% if form.posted_successfully? %}<p role="status">Grazie per l’iscrizione.</p>{% endif %}{% if form.errors %}<div role="alert">{{ form.errors | default_errors }}</div>{% endif %}{% if shop.privacy_policy %}<p class="b-footer__privacy">{{ section.settings.privacy_text | escape }} <a href="{{ shop.privacy_policy.url }}">Privacy policy</a></p>{% endif %}{% endform %}{% endcase %}</div>{% endfor %}</div>
+<div class="b-footer__bottom"><small>© {{ 'now' | date: '%Y' }} {{ shop.name | escape }}</small>{% if section.settings.show_social_media %}{% render 'social-media' %}{% endif %}{% if section.settings.show_payment_icons %}<ul class="b-payments" role="list" aria-label="Metodi di pagamento attivi">{% for payment in shop.enabled_payment_types %}<li>{{ payment | payment_type_svg_tag }}</li>{% endfor %}</ul>{% endif %}</div></div></footer>
+{% schema %}
+{
+  "name": "Baldini · Footer",
+  "tag": "section",
+  "class": "baldini-section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo ufficiale footer"
+    },
+    {
+      "type": "range",
+      "id": "logo_max_width",
+      "label": "Larghezza logo",
+      "min": 100,
+      "max": 300,
+      "step": 5,
+      "unit": "px",
+      "default": 220
+    },
+    {
+      "type": "range",
+      "id": "logo_mobile_max_width",
+      "label": "Larghezza logo mobile",
+      "min": 80,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "default": 160
+    },
+    {
+      "type": "text",
+      "id": "tagline",
+      "label": "Messaggio",
+      "default": "La tua passione. La nostra esperienza."
+    },
+    {
+      "type": "text",
+      "id": "privacy_text",
+      "label": "Testo privacy",
+      "default": "Iscrivendoti richiedi di ricevere la nostra newsletter. Leggi la"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_social_media",
+      "label": "Mostra social",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_payment_icons",
+      "label": "Metodi di pagamento attivi",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "links",
+      "name": "Menu",
+      "settings": [
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Menu Shopify"
+        },
+        {
+          "type": "text",
+          "id": "menu_title",
+          "label": "Titolo"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Contatti o testo",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titolo"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Contenuto"
+        }
+      ]
+    },
+    {
+      "type": "newsletter",
+      "name": "Newsletter",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titolo",
+          "default": "Novità, selezioni e occasioni."
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Testo"
+        }
+      ]
+    },
+    {
+      "type": "collections",
+      "name": "Collezioni shop",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titolo",
+          "default": "Shop"
+        },
+        {
+          "type": "collection_list",
+          "id": "collections",
+          "label": "Collezioni reali",
+          "limit": 10
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

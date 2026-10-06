@@ -1,0 +1,65 @@
+<section class="b-container b-finder" aria-labelledby="FinderHeading-{{ section.id }}"><p class="b-eyebrow">{{ section.settings.eyebrow | escape }}</p><h2 id="FinderHeading-{{ section.id }}">{{ section.settings.title | escape }}</h2>
+<baldini-finder><form action="{{ section.settings.collection.url | default: routes.all_products_collection_url }}" method="get">
+<label>Tipologia<select data-finder-type><option value="0">{{ section.settings.collection.title | default: 'Tutti i prodotti' | escape }}</option>{% for block in section.blocks %}{% if block.settings.collection %}<option value="{{ forloop.index }}">{{ block.settings.label | default: block.settings.collection.title | escape }}</option>{% endif %}{% endfor %}</select></label>
+<label data-size-label hidden>Taglia<select data-finder-size><option value="">Tutte le taglie</option></select></label>
+<label data-budget-label hidden>Budget<select data-finder-budget><option value="">Ogni budget</option><option value="0:100">Fino a €100</option><option value="100:200">€100–200</option><option value="200:400">€200–400</option><option value="400:">Oltre €400</option></select></label>
+<label data-brand-label hidden>Brand<select data-finder-brand><option value="">Tutti i brand</option></select></label><button class="b-button" type="submit">{{ section.settings.button | escape }} {% render 'baldini-icon', name: 'arrow' %}</button>
+</form><script type="application/json" data-finder-config>[
+{% assign finder_collection = section.settings.collection %}{% render 'baldini-finder-config', collection: finder_collection %}
+{% for block in section.blocks %},{% render 'baldini-finder-config', collection: block.settings.collection %}{% endfor %}
+]</script><noscript><p><a class="link" href="{{ section.settings.collection.url | default: routes.all_products_collection_url }}">Esplora il catalogo e usa i filtri della categoria.</a></p></noscript></baldini-finder></section>
+{% schema %}
+{
+  "name": "Baldini · Trova casco",
+  "tag": "section",
+  "class": "baldini-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Sopratitolo",
+      "default": "LA SCELTA PARTE DA TE"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titolo",
+      "default": "Trova il casco giusto per te"
+    },
+    {
+      "type": "text",
+      "id": "button",
+      "label": "Pulsante",
+      "default": "Mostra i caschi"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collezione iniziale"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "Tipologia reale",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Etichetta"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collezione"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Baldini · Trova casco"
+    }
+  ]
+}
+{% endschema %}

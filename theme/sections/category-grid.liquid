@@ -1,0 +1,57 @@
+<div class="b-container b-section"><div class="b-section-heading"><div><p class="b-eyebrow">{{ section.settings.eyebrow | escape }}</p><h2>{{ section.settings.title | escape }}</h2></div></div><div class="b-category-grid">
+{% for block in section.blocks %}{% assign category = block.settings.collection %}{% assign image = block.settings.image | default: category.image | default: category.products.first.featured_image %}{% if category != blank %}<a class="b-category" href="{{ category.url }}" {{ block.shopify_attributes }}>{% if image %}{{ image | image_url: width: 900 | image_tag: loading: 'lazy', sizes: '(max-width:749px) 45vw, 30vw', widths: '300,450,600,900' }}{% endif %}<span><strong>{{ block.settings.title | default: category.title | escape }}</strong><small>{{ section.settings.cta | escape }} {% render 'baldini-icon', name: 'arrow' %}</small></span></a>{% endif %}{% endfor %}</div></div>
+{% schema %}
+{
+  "name": "Baldini · Categorie",
+  "tag": "section",
+  "class": "baldini-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Sopratitolo",
+      "default": "UNA PASSIONE, MILLE STRADE"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titolo",
+      "default": "Scegli il tuo stile"
+    },
+    {
+      "type": "text",
+      "id": "cta",
+      "label": "Invito",
+      "default": "Esplora la selezione"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "Categoria",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collezione"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titolo"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Immagine"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Baldini · Categorie"
+    }
+  ]
+}
+{% endschema %}

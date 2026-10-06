@@ -1,0 +1,37 @@
+[
+  {
+    "id": "3720565183479497137",
+    "type": "shopify://apps/globo-product-option/blocks/app-embed-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
+    "disabled": false
+  },
+  {
+    "id": "3753596010683798665",
+    "type": "shopify://apps/pushdaddy-whatsapp-live-chat/blocks/app-embed/e3f2054d-bf7b-4e63-8db3-00712592382c",
+    "disabled": false
+  },
+  {
+    "id": "8814297988395605169",
+    "type": "shopify://apps/adperfect-marketing-platform/blocks/app-embed/8b4a8c56-21b5-437e-95f9-cd5dc65ceb49",
+    "disabled": false
+  },
+  {
+    "id": "319724205969189013",
+    "type": "shopify://apps/hulk-form-builder/blocks/app-embed/b6b8dd14-356b-4725-a4ed-77232212b3c3",
+    "disabled": false
+  },
+  {
+    "id": "8908507833471942310",
+    "type": "shopify://apps/ldt-gift-wrap/blocks/embed/4046b73d-300a-4b9b-9ab0-bce054825b2c",
+    "disabled": false
+  },
+  {
+    "id": "11349500561483629931",
+    "type": "shopify://apps/notify-me/blocks/app-embed/b399b727-6c85-44fc-9e21-63114bd72054",
+    "disabled": false
+  },
+  {
+    "id": "1513253815146976218",
+    "type": "shopify://apps/omnisend-email-marketing-sms/blocks/app-embed/44704aa2-794f-4c5d-8c8e-039c841158e9",
+    "disabled": false
+  }
+]

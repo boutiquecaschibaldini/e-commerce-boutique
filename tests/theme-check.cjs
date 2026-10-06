@@ -1,0 +1,3 @@
+const REPO=require('path').resolve(__dirname,'..');
+const {check}=require('@shopify/theme-check-node');const fs=require('fs');
+(async()=>{const offenses=await check(REPO+'/theme');fs.writeFileSync(REPO+'/docs/theme-check.json',JSON.stringify(offenses,null,2));const errors=offenses.filter(o=>o.severity===0||o.severity==='error');console.log('Errors:',errors.length,'Warnings:',offenses.length-errors.length);if(errors.length)process.exitCode=1;console.log(JSON.stringify(offenses.map(o=>({check:o.check,severity:o.severity,file:o.uri||o.path,message:o.message,start:o.start})),null,2));})().catch(e=>{console.error(e);process.exit(1)});

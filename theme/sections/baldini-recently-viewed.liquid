@@ -1,0 +1,21 @@
+<baldini-recent class="b-container b-section" hidden {% if product %}data-current="{{ product.handle | escape }}"{% endif %}><h2>{{ section.settings.title | escape }}</h2><div class="b-saved-grid" data-recent-list></div><p role="status" data-recent-status></p></baldini-recent>
+{% schema %}
+{
+  "name": "Baldini · Visti recenti",
+  "tag": "section",
+  "class": "baldini-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titolo",
+      "default": "Visti di recente"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Baldini · Visti recenti"
+    }
+  ]
+}
+{% endschema %}

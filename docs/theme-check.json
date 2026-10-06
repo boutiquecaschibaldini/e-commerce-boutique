@@ -1,0 +1,257 @@
+[
+  {
+    "type": "LiquidHtml",
+    "check": "RemoteAsset",
+    "message": "Asset should be served by the Shopify CDN for better performance.",
+    "uri": "file:///workspace/e-commerce-boutique/theme/snippets/article-comments.liquid",
+    "severity": 1,
+    "start": {
+      "index": 1107,
+      "line": 25,
+      "character": 98
+    },
+    "end": {
+      "index": 1164,
+      "line": 25,
+      "character": 155
+    }
+  },
+  {
+    "type": "LiquidHtml",
+    "check": "OrphanedSnippet",
+    "message": "This snippet is not referenced by any other files",
+    "uri": "file:///workspace/e-commerce-boutique/theme/snippets/localization-selector.liquid",
+    "severity": 1,
+    "start": {
+      "index": 0,
+      "line": 0,
+      "character": 0
+    },
+    "end": {
+      "index": 1,
+      "line": 0,
+      "character": 1
+    }
+  },
+  {
+    "type": "LiquidHtml",
+    "check": "OrphanedSnippet",
+    "message": "This snippet is not referenced by any other files",
+    "uri": "file:///workspace/e-commerce-boutique/theme/snippets/mega-menu-horizontal.liquid",
+    "severity": 1,
+    "start": {
+      "index": 0,
+      "line": 0,
+      "character": 0
+    },
+    "end": {
+      "index": 1,
+      "line": 0,
+      "character": 1
+    }
+  },
+  {
+    "type": "LiquidHtml",
+    "check": "OrphanedSnippet",
+    "message": "This snippet is not referenced by any other files",
+    "uri": "file:///workspace/e-commerce-boutique/theme/snippets/navigation-panel.liquid",
+    "severity": 1,
+    "start": {
+      "index": 0,
+      "line": 0,
+      "character": 0
+    },
+    "end": {
+      "index": 1,
+      "line": 0,
+      "character": 1
+    }
+  },
+  {
+    "type": "LiquidHtml",
+    "check": "OrphanedSnippet",
+    "message": "This snippet is not referenced by any other files",
+    "uri": "file:///workspace/e-commerce-boutique/theme/snippets/navigation-promo-block.liquid",
+    "severity": 1,
+    "start": {
+      "index": 0,
+      "line": 0,
+      "character": 0
+    },
+    "end": {
+      "index": 1,
+      "line": 0,
+      "character": 1
+    }
+  },
+  {
+    "type": "LiquidHtml",
+    "check": "AssetPreload",
+    "message": "For better performance, prefer using the preload_tag filter",
+    "uri": "file:///workspace/e-commerce-boutique/theme/layout/theme.liquid",
+    "severity": 1,
+    "start": {
+      "index": 1961,
+      "line": 36,
+      "character": 6
+    },
+    "end": {
+      "index": 2067,
+      "line": 36,
+      "character": 112
+    }
+  },
+  {
+    "type": "LiquidHtml",
+    "check": "AssetPreload",
+    "message": "For better performance, prefer using the preload_tag filter",
+    "uri": "file:///workspace/e-commerce-boutique/theme/layout/theme.liquid",
+    "severity": 1,
+    "start": {
+      "index": 2143,
+      "line": 40,
+      "character": 6
+    },
+    "end": {
+      "index": 2246,
+      "line": 40,
+      "character": 109
+    }
+  },
+  {
+    "type": "LiquidHtml",
+    "check": "RemoteAsset",
+    "message": "Asset should be served by the Shopify CDN for better performance.",
+    "uri": "file:///workspace/e-commerce-boutique/theme/layout/theme.liquid",
+    "severity": 1,
+    "start": {
+      "index": 1859,
+      "line": 33,
+      "character": 29
+    },
+    "end": {
+      "index": 1903,
+      "line": 33,
+      "character": 73
+    }
+  },
+  {
+    "type": "JSON",
+    "check": "DeprecatedFontsOnSettingsData",
+    "message": "The font \"din_next_n7\" is deprecated",
+    "uri": "file:///workspace/e-commerce-boutique/theme/config/settings_data.json",
+    "severity": 1,
+    "start": {
+      "index": 5400,
+      "line": 0,
+      "character": 5400
+    },
+    "end": {
+      "index": 5413,
+      "line": 0,
+      "character": 5413
+    }
+  },
+  {
+    "type": "JSON",
+    "check": "DeprecatedFontsOnSettingsData",
+    "message": "The font \"din_next_n4\" is deprecated",
+    "uri": "file:///workspace/e-commerce-boutique/theme/config/settings_data.json",
+    "severity": 1,
+    "start": {
+      "index": 5482,
+      "line": 0,
+      "character": 5482
+    },
+    "end": {
+      "index": 5495,
+      "line": 0,
+      "character": 5495
+    }
+  },
+  {
+    "type": "JSON",
+    "check": "DeprecatedFontsOnSettingsData",
+    "message": "The font \"futura_n7\" is deprecated",
+    "uri": "file:///workspace/e-commerce-boutique/theme/config/settings_data.json",
+    "severity": 1,
+    "start": {
+      "index": 6389,
+      "line": 0,
+      "character": 6389
+    },
+    "end": {
+      "index": 6400,
+      "line": 0,
+      "character": 6400
+    }
+  },
+  {
+    "type": "JSON",
+    "check": "DeprecatedFontsOnSettingsData",
+    "message": "The font \"futura_n4\" is deprecated",
+    "uri": "file:///workspace/e-commerce-boutique/theme/config/settings_data.json",
+    "severity": 1,
+    "start": {
+      "index": 6503,
+      "line": 0,
+      "character": 6503
+    },
+    "end": {
+      "index": 6514,
+      "line": 0,
+      "character": 6514
+    }
+  },
+  {
+    "type": "JSON",
+    "check": "DeprecatedFontsOnSettingsData",
+    "message": "The font \"itc_berkeley_old_style_n4\" is deprecated",
+    "uri": "file:///workspace/e-commerce-boutique/theme/config/settings_data.json",
+    "severity": 1,
+    "start": {
+      "index": 7420,
+      "line": 0,
+      "character": 7420
+    },
+    "end": {
+      "index": 7447,
+      "line": 0,
+      "character": 7447
+    }
+  },
+  {
+    "type": "LiquidHtml",
+    "check": "LiquidComplexity",
+    "message": "Liquid complexity is 172, which exceeds the maximum of 120. The decision at line 460 pushed it over the limit. Consider simplifying conditional logic, or moving self-contained decision logic into snippets with the render tag.",
+    "uri": "file:///workspace/e-commerce-boutique/theme/snippets/icon.liquid",
+    "severity": 1,
+    "start": {
+      "index": 59172,
+      "line": 459,
+      "character": 435
+    },
+    "end": {
+      "index": 59209,
+      "line": 459,
+      "character": 472
+    }
+  },
+  {
+    "type": "LiquidHtml",
+    "check": "LiquidComplexity",
+    "message": "Liquid complexity is 125, which exceeds the maximum of 120. The decision at line 455 pushed it over the limit. Consider simplifying conditional logic, or moving self-contained decision logic into snippets with the render tag.",
+    "uri": "file:///workspace/e-commerce-boutique/theme/snippets/product-info.liquid",
+    "severity": 1,
+    "start": {
+      "index": 26262,
+      "line": 454,
+      "character": 128
+    },
+    "end": {
+      "index": 26324,
+      "line": 454,
+      "character": 190
+    }
+  }
+]

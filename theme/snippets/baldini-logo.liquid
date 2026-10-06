@@ -1,0 +1,3 @@
+{% assign logo = section.settings.logo | default: settings.baldini_logo | default: shop.brand.logo %}
+<a class="b-logo" href="{{ routes.root_url }}" aria-label="{{ shop.name | escape }} — Home" style="--logo-width:{{ section.settings.logo_max_width | default: 200 }}px;--logo-mobile-width:{{ section.settings.logo_mobile_max_width | default: 125 }}px">
+{% if logo != blank %}{{ logo | image_url: width: 600 | image_tag: widths: '150,200,300,400,600', sizes: '(max-width: 749px) 125px, 200px', loading: 'eager', alt: shop.name }}{% elsif request.design_mode %}<span>Seleziona il logo ufficiale nelle impostazioni del tema.</span>{% endif %}</a>

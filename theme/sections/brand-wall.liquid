@@ -1,0 +1,44 @@
+{% if section.blocks.size > 0 or section.settings.menu.links.size > 0 %}<div class="b-container b-section"><h2>{{ section.settings.title | escape }}</h2><div class="b-brand-wall">{% for block in section.blocks %}{% if block.settings.collection and block.settings.logo %}<a href="{{ block.settings.collection.url }}" {{ block.shopify_attributes }} aria-label="{{ block.settings.collection.title | escape }}">{{ block.settings.logo | image_url: width: 300 | image_tag: loading: 'lazy', widths: '150,300', sizes: '150px', alt: block.settings.collection.title }}</a>{% endif %}{% endfor %}{% if section.blocks.size == 0 %}{% for link in section.settings.menu.links %}<a href="{{ link.url }}">{{ link.title | escape }}</a>{% endfor %}{% endif %}</div></div>{% endif %}
+{% schema %}
+{
+  "name": "Baldini · Brand",
+  "tag": "section",
+  "class": "baldini-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titolo",
+      "default": "I migliori brand del mondo moto"
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menu brand (senza loghi)"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "brand",
+      "name": "Brand reale",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collezione brand"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo ufficiale brand"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Baldini · Brand"
+    }
+  ]
+}
+{% endschema %}

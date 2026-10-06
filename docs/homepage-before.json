@@ -1,0 +1,719 @@
+{
+  "sections": {
+    "slideshow_UKQiF6": {
+      "type": "slideshow",
+      "blocks": {
+        "video_r7dKXh": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/super (8).mp4",
+            "mobile_video": "shopify://files/videos/-70 (7).mp4",
+            "content_max_width": 1200,
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "PROMO SUMMER 26'",
+            "button_link": "shopify://collections/all",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 15,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_r7dKXh"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "show_initial_transition": false,
+        "image_size": "fill",
+        "controls_type": "numbers",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#f2f2f2",
+        "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
+      },
+      "disabled": true
+    },
+    "scrolling-text": {
+      "type": "scrolling-text",
+      "settings": {
+        "full_width": true,
+        "text": "SUPER SCONTI ESTIVI ATTIVI",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 5,
+        "background": "#992228",
+        "background_gradient": "",
+        "text_color": "#f2f2f2",
+        "text_gradient": ""
+      }
+    },
+    "image_link_blocks_iVgw7t": {
+      "type": "image-link-blocks",
+      "blocks": {
+        "item_XzaJBX": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/40_ab69cfff-9ba0-46fe-a487-afd613dfb233.png",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "shopify://collections/accessori-vari",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_HgDDww": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/41_70bd423d-781a-4e90-8c14-e1504ee00a84.png",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "shopify://collections/macna",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_GUXPaE": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/35_4a3ddd3e-0098-48c9-b9d5-818c24a7b08a.png",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "shopify://collections/integrali",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_YddENa": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/36_0323071b-fcf8-4155-aedc-e0448a7e04ef.png",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "shopify://collections/jet",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_VrJraP": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/34_b1efd9a5-8126-4f0e-9283-866d16208c71.png",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "shopify://collections/modulari",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_i6QUCt": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/39_70a8540f-fbe4-4965-9a75-2609488a6a2c.png",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "shopify://collections/caschi-adventure",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_9gCfUe": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/38_206eb8b2-9347-4632-9424-68bf112aa6cf.png",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "shopify://collections/caschi-cross",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_aDhTq3": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/37_c72b75e3-70a9-49ce-9289-f3c12b5c2730.png",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "shopify://collections/interphone",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "item_XzaJBX",
+        "item_HgDDww",
+        "item_GUXPaE",
+        "item_YddENa",
+        "item_VrJraP",
+        "item_i6QUCt",
+        "item_9gCfUe",
+        "item_aDhTq3"
+      ],
+      "name": "Image link blocks",
+      "settings": {
+        "full_width": true,
+        "block_size": "large",
+        "subheading": "",
+        "title": "PROMO SUMMER 26'",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "logo_list_EJCLzW": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_RVTTBj": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/1_bc8ba2cf-144f-463a-a030-522dad9ef86f.png",
+            "logo_width": 120,
+            "link": "https://boutiquecaschibaldini.it/collections/all?sort_by=title-ascending&filter.v.availability=1&filter.v.option.taglia=XS"
+          }
+        },
+        "logo_Bj36Gr": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/4_4c5b578d-7336-46f7-83e9-c1c675cd90f5.png",
+            "logo_width": 120,
+            "link": "https://boutiquecaschibaldini.it/collections/all?sort_by=title-ascending&filter.v.availability=1&filter.v.option.taglia=S"
+          }
+        },
+        "logo_VXdrdi": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/5_919cfdc0-94fb-4917-85d6-ec67366c127a.png",
+            "logo_width": 120,
+            "link": "https://boutiquecaschibaldini.it/collections/all?sort_by=title-ascending&filter.v.availability=1&filter.v.option.taglia=M"
+          }
+        },
+        "logo_firihD": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/6_20d1d2f5-4f9a-4284-b320-de2851de863f.png",
+            "logo_width": 120,
+            "link": "https://boutiquecaschibaldini.it/collections/all?sort_by=title-ascending&filter.v.availability=1&filter.v.option.taglia=L"
+          }
+        },
+        "logo_UmpVGR": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/7_f594f37c-105c-4627-bb51-26fee119c0db.png",
+            "logo_width": 120,
+            "link": "https://boutiquecaschibaldini.it/collections/all?sort_by=title-ascending&filter.v.availability=1&filter.v.option.taglia=XL"
+          }
+        },
+        "logo_tAehnH": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/8_b764fe7f-b101-4077-b293-43d52363339f.png",
+            "logo_width": 120,
+            "link": "https://boutiquecaschibaldini.it/collections/all?sort_by=title-ascending&filter.v.availability=1&filter.v.option.taglia=XXL"
+          }
+        },
+        "logo_hxbnMV": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/9_e50bd707-c155-482c-ad0c-4f82250519c9.png",
+            "logo_width": 120,
+            "link": "https://boutiquecaschibaldini.it/collections/all?sort_by=title-ascending&filter.v.availability=1&filter.v.option.taglia=XXXL"
+          }
+        }
+      },
+      "block_order": [
+        "logo_RVTTBj",
+        "logo_Bj36Gr",
+        "logo_VXdrdi",
+        "logo_firihD",
+        "logo_UmpVGR",
+        "logo_tAehnH",
+        "logo_hxbnMV"
+      ],
+      "name": "Logo list",
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "title": "CERCA IL TUO CASCO PER TAGLIA",
+        "content": "",
+        "text_alignment": "start",
+        "items_per_row": 7,
+        "background": "#f0f0f0",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "collection-list": {
+      "type": "collection-list",
+      "blocks": {
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/Progetto-senza-titolo-8.png",
+            "subheading": "",
+            "title": "CASCHI",
+            "url": "",
+            "heading_tag": "h3",
+            "text_position": "place-self-end-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/6-3.png",
+            "subheading": "",
+            "title": "ACCESSORI",
+            "url": "",
+            "heading_tag": "h3",
+            "text_position": "place-self-end-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/Progetto-senza-titolo-13.png",
+            "subheading": "",
+            "title": "ABBIGLIAMENTO",
+            "url": "",
+            "heading_tag": "h3",
+            "text_position": "place-self-end-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection-1",
+        "collection-2",
+        "collection-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "stack_collections": true,
+        "collections_per_row_mobile": "1",
+        "collections_per_row": 3,
+        "show_progress_bar": false,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "jet",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_count": 12,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "CASCHI JET IN OFFERTA!",
+        "content": "<p><strong>SUPER PROMOZIONI SUMMER 26' </strong>solo da <strong>BOUTIQUE CASCHI BALDINI </strong>trovi i migliori caschi Jet, Demi jet e doppia visiera a partire da €39,99! </p>",
+        "link_url": "shopify://collections/jet",
+        "link_text": "FAI IN FRETTA!",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "image_with_text_overlay_TQKbJx": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_FCKyQt": {
+          "type": "heading",
+          "settings": {
+            "text": "CASCHI INTEGRALI",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_FCKyQt"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/6_d59b58f7-1b02-4b86-9c82-790453844fa4.png",
+        "mobile_image": "shopify://shop_images/p_siide_sito_4.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "featured_collection_4iKPgT": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "integrali",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_count": 12,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "caschi INTEGRALI IN OFFERTA!",
+        "content": "<p><strong>SUPER PROMOZIONI SUMMER 26' </strong>solo da <strong>BOUTIQUE CASCHI BALDINI </strong>trovi i migliori prodotti per i veri appassionati di caschi integrali a prezzi veramente incredibili! </p>",
+        "link_url": "shopify://collections/integrali",
+        "link_text": "Scopri subito le nostre offerte!",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "image-with-text-overlay": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/p_Progetto_senza_titolo_1.png",
+        "mobile_image": "shopify://shop_images/p_siide_sito_1.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "featured_collection_MUjqBY": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "collection": "black-friday",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_count": 12,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "Offerte Natalizie",
+        "content": "<p>Solo da <strong>BOUTIQUE CASCHI BALDINI </strong>trovi i migliori prodotti per i veri appassionati di caschi integrali<br/>a prezzi veramente incredibili! </p><p><strong>LA CORSA AL CASCO INIZIA ADESSO!</strong><br/><br/></p>",
+        "link_url": "shopify://collections/black-friday",
+        "link_text": "FAI IN FRETTA!",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "image_with_text_overlay_QT6RH9": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_7Fn4x8": {
+          "type": "heading",
+          "settings": {
+            "text": "CASCHI MODULARI",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_7Fn4x8"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/7_174d0c07-d8d0-41a8-bccb-4e8bb6b7e3ae.png",
+        "mobile_image": "shopify://shop_images/32_77c0273b-4483-4ff2-8786-4706ff15c70e.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "featured_collection_tBXB7V": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "modulari",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_count": 12,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "CASCHI MODULARI IN OFFERTA!",
+        "content": "<p><strong>SUPER PROMOZIONI SUMMER 26' </strong>rimani sempre aggiornato sulle fantastiche novità del mondo <strong>MODULARI </strong>scopri subito tutti i nuovi e fantastici prodotti selezionati dal nostro Staff!</p>",
+        "link_url": "shopify://collections/modulari",
+        "link_text": "Scopri subito le nostre offerte!",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "image_with_text_overlay_4JxYVX": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_nCJPH8": {
+          "type": "heading",
+          "settings": {
+            "text": "dna off road",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_nCJPH8"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/Progetto_senza_titolo_43.png",
+        "mobile_image": "shopify://shop_images/ef52575d69e348ceba9d6e7ae85b6426e5de6af6-3333x5000.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "featured_collection_cCMXJN": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "caschi-cross",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_count": 12,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "DNA OFF-ROAD INVERNALE!",
+        "content": "<p><strong>SUPER PROMOZIONI SUMMER 26' </strong>rimani sempre aggiornato sulle fantastiche novità del mondo <strong>OFF- ROAD </strong>scopri subito tutti i nuovi e fantastici prodotti selezionati dal nostro Staff!<br/><br/></p>",
+        "link_url": "shopify://collections/caschi-cross",
+        "link_text": "Scopri subito le nostre offerte!",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "image_with_text_overlay_WxMeLJ": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_cPNWY3": {
+          "type": "heading",
+          "settings": {
+            "text": "giacche moto",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_cPNWY3"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/Jackets-main.webp",
+        "mobile_image": "shopify://shop_images/siide_sito_6.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "featured_collection_zMfcdR": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "abbigliamento",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_count": 12,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "GIACCHE MOTO IN OFFERTA!",
+        "content": "<p><strong>SUPER PROMOZIONI SUMMER 26' </strong>aggiungi stile alla tua guida con l'abbigliamento <strong>Macna. </strong>Scopri la selezione di giacche, disponibili in vari stili e design, per una guida sicura e di tendenza.</p>",
+        "link_url": "shopify://collections/abbigliamento",
+        "link_text": "Scopri subito le nostre offerte!",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "image_with_text_overlay_PJ8nEh": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_tYDAEf": {
+          "type": "heading",
+          "settings": {
+            "text": "KTM",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tYDAEf"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/p_Progetto_senza_titolo_2.png",
+        "mobile_image": "shopify://shop_images/Progetto_senza_titolo_49.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "featured_collection_MzLjiM": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "ktm",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_count": 12,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "OFFICIAL SUMMER 26' KTM",
+        "content": "<p>Aggiungi stile alla tua guida con <strong>KTM. </strong>Scopri la selezione di giacche, prodotti disponibili in vari stili e design, per una guida sicura e di tendenza.</p>",
+        "link_url": "shopify://collections/ktm",
+        "link_text": "Scopri subito le nostre offerte!",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "baldini_hero_3d": {
+      "type": "baldini-hero-3d",
+      "settings": {
+        "eyebrow": "IL TUO PROSSIMO CASCO, DA OGNI ANGOLO",
+        "heading": "Cambia prospettiva.",
+        "description": "Esplora il casco a 360° e trova il tuo stile. La tua prossima strada inizia qui.",
+        "button_label": "Scopri i caschi jet",
+        "link": "shopify://collections/jet"
+      }
+    }
+  },
+  "order": [
+    "baldini_hero_3d",
+    "slideshow_UKQiF6",
+    "scrolling-text",
+    "image_link_blocks_iVgw7t",
+    "logo_list_EJCLzW",
+    "collection-list",
+    "featured-collection",
+    "image_with_text_overlay_TQKbJx",
+    "featured_collection_4iKPgT",
+    "image-with-text-overlay",
+    "featured_collection_MUjqBY",
+    "image_with_text_overlay_QT6RH9",
+    "featured_collection_tBXB7V",
+    "image_with_text_overlay_4JxYVX",
+    "featured_collection_cCMXJN",
+    "image_with_text_overlay_WxMeLJ",
+    "featured_collection_zMfcdR",
+    "image_with_text_overlay_PJ8nEh",
+    "featured_collection_MzLjiM"
+  ]
+}

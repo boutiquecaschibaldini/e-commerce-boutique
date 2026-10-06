@@ -1,0 +1,171 @@
+<baldini-header class="b-header" {% if section.settings.enable_sticky %}data-sticky{% endif %}>
+<div class="b-header__main b-container">
+<button class="b-mobile-only b-icon-button" data-dialog-open="BMobileMenu" aria-label="Apri menu" aria-controls="BMobileMenu" aria-expanded="false">{% render 'baldini-icon', name: 'menu' %}</button>
+{% render 'baldini-logo' %}
+<div class="b-header__search">{% assign search_id = section.id | append: '-desktop' %}{% render 'baldini-search', id: search_id %}</div>
+<div class="b-header__actions">
+{% if shop.customer_accounts_enabled %}<a class="b-icon-button b-account" href="{{ routes.account_url }}" aria-label="Account">{% render 'baldini-icon', name: 'user' %}<span>Account</span></a>{% endif %}
+{% if settings.baldini_wishlist %}<button class="b-icon-button b-wishlist-open" data-dialog-open="BWishlist" aria-controls="BWishlist" aria-expanded="false" aria-label="Apri preferiti">{% render 'baldini-icon', name: 'heart' %}<span>Preferiti</span><span data-wishlist-count class="b-count">0</span></button>{% endif %}
+<a class="b-icon-button" href="{{ routes.cart_url }}" {% if settings.cart_type == 'drawer' %}aria-controls="cart-drawer" aria-expanded="false"{% endif %} aria-label="Apri carrello">{% render 'baldini-icon', name: 'bag' %}<span class="b-desktop-label">Carrello</span><cart-count class="b-count">{{ cart.item_count }}</cart-count></a>
+</div></div>
+<div class="b-header__mobile-search b-mobile-only b-container">{% assign search_id = section.id | append: '-mobile' %}{% render 'baldini-search', id: search_id %}</div>
+<nav class="b-nav" aria-label="Navigazione principale"><ul class="b-container b-nav__list" role="list">
+{% render 'baldini-navigation-fallback', mobile: false %}
+{% for link in section.settings.menu.links %}<li>
+{% if link.links.size > 0 %}<details class="b-mega"><summary>{{ link.title | escape }} <span aria-hidden="true">⌄</span></summary><div class="b-mega__panel"><div class="b-container b-mega__columns">
+<div class="b-mega__intro"><p>{{ link.title | escape }}</p><a href="{{ link.url }}">Scopri tutto {% render 'baldini-icon', name: 'arrow' %}</a></div>
+{% for child in link.links %}<div><a class="b-mega__heading" href="{{ child.url }}">{{ child.title | escape }}</a>{% if child.links.size > 0 %}<ul role="list">{% for grandchild in child.links %}<li><a href="{{ grandchild.url }}">{{ grandchild.title | escape }}</a></li>{% endfor %}</ul>{% endif %}</div>{% endfor %}
+{% for block in section.blocks %}{% assign menu_title = link.title | downcase %}{% assign block_title = block.settings.menu_item | downcase %}{% if menu_title == block_title %}
+{% if block.settings.brand_menu.links.size > 0 %}<div><p class="b-mega__heading">{{ block.settings.brand_title | escape }}</p><ul>{% for item in block.settings.brand_menu.links %}<li><a href="{{ item.url }}">{{ item.title | escape }}</a></li>{% endfor %}</ul></div>{% endif %}
+{% if block.settings.shop_menu.links.size > 0 %}<div><p class="b-mega__heading">{{ block.settings.shop_title | escape }}</p><ul>{% for item in block.settings.shop_menu.links %}<li><a href="{{ item.url }}">{{ item.title | escape }}</a></li>{% endfor %}</ul></div>{% endif %}
+{% if block.settings.image %}<a class="b-mega__promo" href="{{ block.settings.link | default: link.url }}">{{ block.settings.image | image_url: width: 600 | image_tag: loading: 'lazy', widths: '300,600', sizes: '240px' }}<strong>{{ block.settings.title | escape }}</strong></a>{% endif %}
+{% endif %}{% endfor %}</div></div></details>{% else %}<a href="{{ link.url }}" {% if link.current %}aria-current="page"{% endif %} {% if link.title == section.settings.promo_label %}class="b-nav__promo"{% endif %}>{{ link.title | escape }}</a>{% endif %}</li>{% endfor %}
+{% if section.settings.brand_menu.links.size > 0 %}<li><details class="b-mega"><summary>{{ section.settings.brand_label | escape }} <span aria-hidden="true">⌄</span></summary><div class="b-mega__panel"><div class="b-container b-brand-links">{% for link in section.settings.brand_menu.links %}<a href="{{ link.url }}">{{ link.title | escape }}</a>{% endfor %}</div></div></details></li>{% endif %}
+</ul></nav>
+</baldini-header>
+<dialog class="b-dialog b-mobile-menu" id="BMobileMenu" aria-labelledby="BMobileTitle"><div class="b-dialog__head"><h2 id="BMobileTitle">Esplora il catalogo</h2><button class="b-icon-button" data-dialog-close aria-label="Chiudi menu">{% render 'baldini-icon', name: 'close' %}</button></div><nav aria-label="Navigazione mobile">{% render 'baldini-navigation-fallback', mobile: true %}
+{% for link in section.settings.menu.links %}{% if link.links.size > 0 %}<details><summary>{{ link.title | escape }}</summary><a href="{{ link.url }}">Scopri tutto</a>{% for child in link.links %}{% if child.links.size > 0 %}<details><summary>{{ child.title | escape }}</summary><a href="{{ child.url }}">Scopri tutto</a>{% for grandchild in child.links %}<a href="{{ grandchild.url }}">{{ grandchild.title | escape }}</a>{% endfor %}</details>{% else %}<a href="{{ child.url }}">{{ child.title | escape }}</a>{% endif %}{% endfor %}</details>{% else %}<a href="{{ link.url }}">{{ link.title | escape }}</a>{% endif %}{% endfor %}
+{% if section.settings.brand_menu.links.size > 0 %}<details><summary>{{ section.settings.brand_label | escape }}</summary>{% for link in section.settings.brand_menu.links %}<a href="{{ link.url }}">{{ link.title | escape }}</a>{% endfor %}</details>{% endif %}
+{% if settings.baldini_wishlist %}<button type="button" class="b-mobile-wishlist" data-mobile-wishlist>Preferiti <span data-wishlist-count>0</span></button>{% endif %}</nav></dialog>
+{% if settings.baldini_wishlist %}<dialog class="b-dialog" id="BWishlist" aria-labelledby="BWishlistTitle"><div class="b-dialog__head"><h2 id="BWishlistTitle">I tuoi preferiti</h2><button class="b-icon-button" data-dialog-close aria-label="Chiudi preferiti">{% render 'baldini-icon', name: 'close' %}</button></div><p class="b-muted">Salvati su questo dispositivo.</p><div data-wishlist-list class="b-saved-grid"></div><p data-wishlist-status role="status"></p></dialog>{% endif %}
+
+{% schema %}
+{
+  "name": "Baldini · Header",
+  "tag": "header",
+  "class": "shopify-section--header",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "enable_sticky",
+      "label": "Header sticky",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo ufficiale"
+    },
+    {
+      "type": "range",
+      "id": "logo_max_width",
+      "label": "Larghezza logo desktop",
+      "min": 100,
+      "max": 300,
+      "step": 5,
+      "unit": "px",
+      "default": 200
+    },
+    {
+      "type": "range",
+      "id": "logo_mobile_max_width",
+      "label": "Larghezza logo mobile",
+      "min": 80,
+      "max": 180,
+      "step": 5,
+      "unit": "px",
+      "default": 125
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menu principale"
+    },
+    {
+      "type": "link_list",
+      "id": "brand_menu",
+      "label": "Menu brand"
+    },
+    {
+      "type": "text",
+      "id": "brand_label",
+      "label": "Titolo brand",
+      "default": "Brand"
+    },
+    {
+      "type": "text",
+      "id": "promo_label",
+      "label": "Voce da evidenziare",
+      "default": "Promo"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "mega_menu",
+      "name": "Blocco mega-menu",
+      "settings": [
+        {
+          "type": "text",
+          "id": "menu_item",
+          "label": "Voce menu associata",
+          "default": "Caschi"
+        },
+        {
+          "type": "link_list",
+          "id": "brand_menu",
+          "label": "Menu brand caschi"
+        },
+        {
+          "type": "text",
+          "id": "brand_title",
+          "label": "Titolo brand",
+          "default": "Brand principali"
+        },
+        {
+          "type": "link_list",
+          "id": "shop_menu",
+          "label": "Menu acquista per"
+        },
+        {
+          "type": "text",
+          "id": "shop_title",
+          "label": "Titolo acquista per",
+          "default": "Acquista per"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Immagine promo"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titolo promo"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link promo"
+        }
+      ]
+    },
+    {
+      "type": "navigation_group",
+      "name": "Gruppo categorie",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titolo"
+        },
+        {
+          "type": "collection_list",
+          "id": "collections",
+          "label": "Collezioni esistenti",
+          "limit": 12
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Menu Shopify alternativo"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link diretto (opzionale)"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,77 @@
+{
+  "scope": "Local Shopify contract harness with fixtures, not live Shopify/app verification",
+  "results": [
+    {
+      "name": "Homepage Liquid, single H1, actual section order",
+      "status": "passed"
+    },
+    {
+      "name": "Desktop menu, outside click and Escape",
+      "status": "passed"
+    },
+    {
+      "name": "Predictive search calls Shopify section endpoint",
+      "status": "passed"
+    },
+    {
+      "name": "Finder uses real filter params and ranges",
+      "status": "passed"
+    },
+    {
+      "name": "Collection controls and two-column mobile grid",
+      "status": "passed"
+    },
+    {
+      "name": "Wishlist persistence and remove",
+      "status": "passed"
+    },
+    {
+      "name": "Mobile drawer, nesting, focus and close",
+      "status": "passed"
+    },
+    {
+      "name": "360 view and true WebGL model load",
+      "status": "passed"
+    },
+    {
+      "name": "Native product gallery and app blocks retained",
+      "status": "passed"
+    },
+    {
+      "name": "Choosing size is required, default size is not auto-added",
+      "status": "passed"
+    },
+    {
+      "name": "Variant picker requests and selects M, updates URL and hidden ID",
+      "status": "passed"
+    },
+    {
+      "name": "Product native add to cart serializes line properties, opens native drawer",
+      "status": "passed"
+    },
+    {
+      "name": "Native cart drawer quantity updates and removal",
+      "status": "passed"
+    },
+    {
+      "name": "Recently viewed renders Shopify-backed products",
+      "status": "passed"
+    },
+    {
+      "name": "Search page renders native product results",
+      "status": "passed"
+    },
+    {
+      "name": "Predictive failure preserves normal form search",
+      "status": "passed"
+    },
+    {
+      "name": "Seven viewport widths and hero bounds",
+      "status": "passed"
+    },
+    {
+      "name": "No JavaScript runtime errors",
+      "status": "passed"
+    }
+  ]
+}

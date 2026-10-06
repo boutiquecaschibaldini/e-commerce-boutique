@@ -1,0 +1,3 @@
+<div class="b-trust {% if compact %}b-trust--compact{% endif %}">
+{% for i in (1..4) %}{% assign title_key = 'baldini_trust_title_' | append: i %}{% assign detail_key = 'baldini_trust_detail_' | append: i %}
+{% if settings[title_key] != blank %}<div>{% case i %}{% when 1 %}{% render 'baldini-icon', name: 'truck' %}{% when 2 %}{% render 'baldini-icon', name: 'help' %}{% when 3 %}{% render 'baldini-icon', name: 'card' %}{% when 4 %}{% render 'baldini-icon', name: 'shield' %}{% endcase %}<span><strong>{{ settings[title_key] | escape }}</strong><small>{{ settings[detail_key] | escape }}</small></span></div>{% endif %}{% endfor %}</div>

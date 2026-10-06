@@ -1,0 +1,103 @@
+<div class="b-hero" style="--hero-text:{{ section.settings.text_color }};--hero-overlay:{{ section.settings.overlay | divided_by: 100.0 }}" data-position="{{ section.settings.position }}">
+{% if section.settings.image %}<picture>{% if section.settings.mobile_image %}<source media="(max-width:749px)" srcset="{{ section.settings.mobile_image | image_url: width: 900 }}">{% endif %}{{ section.settings.image | image_url: width: 2200 | image_tag: widths: '750,1100,1500,1800,2200', sizes: '100vw', loading: 'eager', fetchpriority: 'high', class: 'b-hero__image' }}</picture>{% endif %}
+<div class="b-container b-hero__content"><p class="b-eyebrow">{{ section.settings.eyebrow | escape }}</p><h1>{{ section.settings.title | escape }}</h1><p>{{ section.settings.text | escape }}</p><div class="b-hero__buttons">{% if section.settings.button != blank %}<a class="b-button" href="{{ section.settings.link | default: routes.all_products_collection_url }}">{{ section.settings.button | escape }} {% render 'baldini-icon', name: 'arrow' %}</a>{% endif %}{% if section.settings.second_button != blank and section.settings.second_link != blank %}<a class="b-button b-button--outline" href="{{ section.settings.second_link }}">{{ section.settings.second_button | escape }}</a>{% endif %}</div></div></div>
+{% schema %}
+{
+  "name": "Baldini · Hero",
+  "tag": "section",
+  "class": "baldini-section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Immagine desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Immagine mobile"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Sopratitolo",
+      "default": "SPECIALISTI DEL CASCO MOTO"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titolo",
+      "default": "La tua prossima avventura inizia dal casco giusto."
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Sottotitolo",
+      "default": "Scopri il catalogo e scegli con il supporto dei nostri specialisti."
+    },
+    {
+      "type": "text",
+      "id": "button",
+      "label": "CTA primaria",
+      "default": "Scopri i caschi"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Link primario"
+    },
+    {
+      "type": "text",
+      "id": "second_button",
+      "label": "CTA secondaria",
+      "default": "Vedi le offerte"
+    },
+    {
+      "type": "url",
+      "id": "second_link",
+      "label": "Link secondario"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Colore testo",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "overlay",
+      "label": "Overlay",
+      "min": 0,
+      "max": 80,
+      "step": 5,
+      "unit": "%",
+      "default": 40
+    },
+    {
+      "type": "select",
+      "id": "position",
+      "label": "Posizione testo",
+      "options": [
+        {
+          "value": "start",
+          "label": "Sinistra"
+        },
+        {
+          "value": "center",
+          "label": "Centro"
+        },
+        {
+          "value": "end",
+          "label": "Destra"
+        }
+      ],
+      "default": "start"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Baldini · Hero"
+    }
+  ]
+}
+{% endschema %}

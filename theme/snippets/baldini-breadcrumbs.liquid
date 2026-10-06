@@ -1,0 +1,1 @@
+<nav class="b-container b-breadcrumbs" aria-label="Percorso di navigazione"><a href="{{ routes.root_url }}">Home</a>{% if collection %}<span aria-hidden="true">/</span><a href="{{ collection.url }}">{{ collection.title | escape }}</a>{% endif %}{% if product %}<span aria-hidden="true">/</span><span aria-current="page">{{ product.title | escape }}</span>{% endif %}</nav>

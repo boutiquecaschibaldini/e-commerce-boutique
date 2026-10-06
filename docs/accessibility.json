@@ -1,0 +1,22 @@
+[
+  {
+    "url": "/",
+    "violations": []
+  },
+  {
+    "url": "/products/test-casco",
+    "violations": []
+  },
+  {
+    "url": "/collections/integrali",
+    "violations": []
+  },
+  {
+    "url": "/search?q=LS2",
+    "violations": []
+  },
+  {
+    "url": "/cart",
+    "violations": []
+  }
+]

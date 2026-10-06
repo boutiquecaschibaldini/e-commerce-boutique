@@ -1,0 +1,8 @@
+<div data-baldini-search-results>
+{% if predictive_search.performed %}
+{% for product in predictive_search.resources.products %}<a role="option" aria-selected="false" id="BResult-product-{{ product.id }}" href="{{ product.url }}" class="b-search__result">
+{% if product.featured_image %}{{ product.featured_image | image_url: width: 120 | image_tag: width: 60, height: 60, alt: product.title }}{% endif %}<span><small>{{ product.vendor | escape }}</small><strong>{{ product.title | escape }}</strong><span>{{ product.price | money }}</span></span></a>{% endfor %}
+{% for collection in predictive_search.resources.collections %}<a role="option" aria-selected="false" id="BResult-collection-{{ collection.id }}" href="{{ collection.url }}" class="b-search__result">{{ collection.title | escape }} <span>Categoria</span></a>{% endfor %}
+{% if predictive_search.resources.products.size == 0 and predictive_search.resources.collections.size == 0 %}<p>Nessun suggerimento. Premi Invio per cercare nel catalogo.</p>{% endif %}
+{% endif %}
+</div>
